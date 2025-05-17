@@ -3,13 +3,15 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  color: #d4d4d4;
 }
 
 body {
     background-color:#000B20;
 }
 
-/* Style the links inside the navigation bar */
+
+/* Navigation Bar */
 .navbg {
   background-color: rgba(0, 0, 0, 0.3); /* semi-transparent layer */
   width: 100%;
@@ -24,7 +26,7 @@ body {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 17px:
+  font-size: 17px;
 }
 
 .nav .others{
@@ -55,3 +57,42 @@ body {
   color: white;
 }
 
+
+/* Image Header */
+.image-header img{
+  width: 100%;
+}
+
+
+/* Title */
+.home{
+ margin-top: 20px;
+ justify-content: center;
+ text-align: center;
+ align-items: center;
+ line-height: 80px;
+}
+
+.home h1{
+  font-size: 96px;
+  font-weight: bold;
+}
+
+.home h2{
+  font-size: 48px;
+  color: #50E8F9;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  display: inline-block;
+  font-weight: lighter;
+}
+
+.home h3{
+  margin-top: -20px;
+  font-size: 30px;
+}
+
+/* Profile */
+.profile{
+ position: absolute;
+ margin-top: 350px;
+}
