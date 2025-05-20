@@ -91,8 +91,114 @@ body {
   font-size: 30px;
 }
 
+
 /* Profile */
 .profile{
- position: absolute;
- margin-top: 350px;
+  margin-top: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px 60px;
+  gap: 40px;
+  color: white;
 }
+
+.profile-text h1 {
+  font-size: 96px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.profile-text h1 {
+  font-size: 96px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.profile-text h2 {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(#319BFF, #004E86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 10px
+}
+
+.profile-text h3 {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  color: white;
+  margin-left: 10px
+}
+
+.profile-text h4 {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  color: white;
+  margin-left: 40px
+}
+
+.profile-image img{
+  width: 334px;
+  height: 425px;
+  border-radius: 30px;
+  margin-left: 10%;
+}
+
+
+/* About */
+.about{
+  margin-top: 350px;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px 60px;
+  gap: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text{
+  max-width: 1200px;
+}
+
+.about-text h1 {
+  margin-top: -15px;
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  color: white;
+  text-align: justify;
+}
+
+.about-image img{
+  width: 1210px;
+  height: 390px;
+  border-radius: 10px;
+}
+
+
+/* Skills */
+
+
+
+/* Projects */
+
+
+
+/* Footer */
+
+
