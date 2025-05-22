@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color:#000B20;
+  background-color:#000B20;
 }
 
 
@@ -16,7 +16,6 @@ body {
   background-color: rgba(0, 0, 0, 0.3); /* semi-transparent layer */
   width: 100%;
   position: fixed;
-  padding: 14px;
   box-sizing: border-box;
   z-index: 1000;
 }
