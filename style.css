@@ -18,6 +18,7 @@ body {
   position: fixed;
   box-sizing: border-box;
   z-index: 1000;
+  padding: 14 px;
 }
 
 .nav .name {
