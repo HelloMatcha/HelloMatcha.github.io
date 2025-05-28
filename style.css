@@ -6,6 +6,10 @@
   color: #d4d4d4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color:#000B20;
 }
@@ -168,6 +172,9 @@ body {
 }
 
 .about-text h1 {
+  background: -webkit-linear-gradient(#319BFF, #004E86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-top: -15px;
   font-size: 72px;
   font-weight: bold;
@@ -205,6 +212,9 @@ body {
   margin-bottom: 50px;
   font-weight: bold;
   letter-spacing: 1px;
+  background: -webkit-linear-gradient(#319BFF, #004E86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills-container {
@@ -265,7 +275,9 @@ body {
 .projects h2 {
   font-size: 44px;
   margin-bottom: 10px;
-  color: #0078cd;
+  background: -webkit-linear-gradient(#319BFF, #004E86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .projects h3{
@@ -330,5 +342,77 @@ body {
 
 
 /* Footer */
+.footer {
+  background: url('Assets/footer.png') no-repeat center center/cover; /* Trying new Stuff */
+  color: white;
+  padding: 80px 40px 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-links,
+.footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  border-bottom: 2px solid white;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color:  #00e5ff;
+}
+
+.footer-rights {
+  text-align: right;
+  flex: 1 1 100%;
+  margin-top: 40px;
+  font-size: 20px;
+  color: #eee;
+}
+
+/* Trying new Stuff */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-rights {
+    text-align: center;
+  }
+}
 
 
