@@ -1,3 +1,4 @@
+// Scroll Trigger animation
 document.addEventListener("DOMContentLoaded", () => {
   const faders = document.querySelectorAll('.scroll-fade-up');
 
@@ -16,7 +17,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-  // Flashlight Cursor  
+// Scroll Trigger Animation Footer
+window.addEventListener("scroll", () => {
+    const footer = document.getElementById("footer");
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const docHeight = document.body.offsetHeight;
+
+    const atBottom = scrollY + windowHeight >= docHeight - 50;
+
+    if (atBottom) {
+      footer.classList.add("show");
+    } else {
+      footer.classList.remove("show");
+    }
+  });
+
+
+// Flashlight Cursor  
 document.addEventListener('mousemove', function (e) {
   const light = document.querySelector('.flashlight');
   light.style.left = e.clientX + 'px';

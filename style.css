@@ -185,6 +185,39 @@ body {
   margin-left: 40px
 }
 
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00e5ff;
+  transform: scale(1.2);
+}
+
+.social-icons .icon-discord {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.social-icons .icon-discord:hover {
+  filter: brightness(0) invert(68%) sepia(100%) saturate(800%) hue-rotate(170deg);
+  transform: scale(1.2);
+}
+
 .profile-image img{
   width: 334px;
   height: 425px;
@@ -382,6 +415,24 @@ body {
   color: white;
   padding: 80px 40px 30px;
   font-family: "Open Sans", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-title-wrapper {
+  position: sticky;
+  bottom: 0;
+  background: #000B20;
+  padding: 20px;
+  z-index: 2;
+  transition: transform 0.6s ease-out;
+}
+
+.footer-title {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin-bottom: -30px;
 }
 
 .footer-container {
@@ -390,6 +441,9 @@ body {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 
 .footer-links,
@@ -438,18 +492,22 @@ body {
   color: #eee;
 }
 
-
-/* Trying new Stuff */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-rights {
-    text-align: center;
-  }
+.footer.show .footer-container {
+  bottom: 0;
+  opacity: 1;
 }
 
+.footer-rights {
+  text-align: right;
+}
+
+/* When scroll reached bottom */
+.footer.show .footer-title-wrapper {
+  transform: translateY(-100%);
+}
+
+.footer.show .footer-container {
+  opacity: 1;
+  transform: translateY(0);
+}
 
